@@ -1,5 +1,4 @@
-# NeuroGenArt-EEG-Driven-Generative-AI
-
+# NeuroGenArt-EEG-Driven-Generative-AI (Code will be updated soon) - I'm working on it and will update soon as I continue my research.
 This project is a Python application that generates images based on EEG (Electroencephalogram) data and user input. The generated images are created using a pre-trained model from the `diffusers` library, specifically the `AutoPipelineForText2Image` class. The EEG data is processed to extract frequency information, and a custom prompt for image generation is generated based on the user's input percentages for different brain wave frequencies.
 
 ## Sample Images
