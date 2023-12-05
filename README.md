@@ -7,7 +7,6 @@ This project is a Python application that generates images based on EEG (Electro
 ![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/f930c9fe-fae8-4db3-9deb-bf52b61d60c7)
 
 ## Requirements
-![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/bddc9b24-f1d5-4d0f-ae62-968bedb11c0c)
 
 - Python 3.x
 - `torch`, `numpy`, `pandas`, `matplotlib`, `scipy`, `PIL`, and `diffusers` libraries.
@@ -39,6 +38,7 @@ This project is a Python application that generates images based on EEG (Electro
 3. Click the "Generate Image" button to generate and display an image based on the provided input.
 
 ## File Structure
+![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/bddc9b24-f1d5-4d0f-ae62-968bedb11c0c)
 
 - `genrate.py`: Python script for generating images based on EEG data and user input.
 - `plottin.py`: Python script for processing EEG data and computing frequency percentages.
