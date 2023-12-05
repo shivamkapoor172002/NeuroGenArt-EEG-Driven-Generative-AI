@@ -3,7 +3,8 @@ This project is a Python application that generates images based on EEG (Electro
 
 ## Sample Images
 ![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/f1fea21f-4d35-4e82-a484-f72bd87cd1a7)
-![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/3296e37c-52d4-4890-aad3-71cd3dcc6f0b) ![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/f930c9fe-fae8-4db3-9deb-bf52b61d60c7)
+![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/3296e37c-52d4-4890-aad3-71cd3dcc6f0b) 
+![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/f930c9fe-fae8-4db3-9deb-bf52b61d60c7)
 
 
 ## Requirements
