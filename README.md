@@ -1,66 +1,61 @@
-# NeuroGenArt-EEG-Driven-Generative-AI (Code will be updated soon) - I'm working on it and will update soon as I continue my research.
-This project is a Python application that generates images based on EEG (Electroencephalogram) data and user input. The generated images are created using a pre-trained model from the `diffusers` library, specifically the `AutoPipelineForText2Image` class. The EEG data is processed to extract frequency information, and a custom prompt for image generation is generated based on the user's input percentages for different brain wave frequencies.
+# neurotechx-neurodraw
 
-## Sample Images
-![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/f1fea21f-4d35-4e82-a484-f72bd87cd1a7)
-![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/3296e37c-52d4-4890-aad3-71cd3dcc6f0b) 
-![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/f930c9fe-fae8-4db3-9deb-bf52b61d60c7)
+Install :
 
+Create a new python environment (conda or pythonvenv), and install the requirements in requirements.txt (pip install requirements)
+Run the generate.py script and enjoy! You'll need to put an initial prompt instruction (or let it blank for full creativity!) and specify the relative or absolute path to your EEG csv data (you can send it raw, we'll clean it for you 🍪)
 
-## Requirements
+Open Issue if you have some trouble running it.
 
-- Python 3.x
-- `torch`, `numpy`, `pandas`, `matplotlib`, `scipy`, `PIL`, and `diffusers` libraries.
+NB: For the first run, the install might be excessively long because of the stable diffusion model download (weights around 5gb). You also need at least 6gb of free RAM to use this script in the best condition, otherwise the memory swaps might make the generation a bit longer.
+Image generation takes around 2-3s on an entry level user GPU 
 
-## Installation
+Demonstration:
+   - Here is a picture when measuring activity with a stimuling soft music being played and concentrated on:
+![with calming music](https://github.com/hejingar/neurotechx-neurodraw/assets/67289429/32de3166-26ca-476b-9471-2c62bb35dfd1)
 
-1. Clone the repository:
+   - Here is another one while listenning to the ambiant sound of the teams working during the Hackathon:
+![without music](https://github.com/hejingar/neurotechx-neurodraw/assets/67289429/c76509ac-1379-4d47-a20f-0ec3bf0aca97)
 
-   ```bash
-   git clone [ https://github.com/your-username/brain-wave-image-generator.git](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI)
-   cd ```
-
-2. Install the required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
-
-1. Run the `genrate.py` script:
-
-   ```bash
-   python genrate.py
-   ```
-
-2. Enter the initial prompt and the path to your EEG data CSV file in the Tkinter window.
-
-3. Click the "Generate Image" button to generate and display an image based on the provided input.
-
-## File Structure
-![image](https://github.com/shivamkapoor172002/NeuroGenArt-EEG-Driven-Generative-AI/assets/92868323/bddc9b24-f1d5-4d0f-ae62-968bedb11c0c)
-
-- `genrate.py`: Python script for generating images based on EEG data and user input.
-- `plottin.py`: Python script for processing EEG data and computing frequency percentages.
-- `requirements.txt`: List of Python dependencies.
-
-## Sample EEG Data
-
-The sample EEG data should be in CSV format with columns `timestamp` and `ch1`. Here's an example:
-
-```csv
-timestamp,ch1
-1695905995.254,14377.446696453893
-1695905995.258,14362.873359069034
-1695905995.2619998,14357.55364388867
-1695905995.266,14356.525463643726
-1695905995.27,14353.55268163117
-...
-```
+   - Here is a last sample that has been taken with the Idun Device during a sleep recording (not done by us):
+     ![Screenshot 2023-12-03 132617](https://github.com/hejingar/neurotechx-neurodraw/assets/67289429/8f60dd98-cc28-4e8f-953c-73318b36e0b7)
 
 
+Documentation : 
+#### Introduction
+NeuroDraw is an innovative project that bridges the gap between neuroscience and art, transforming EEG (electroencephalogram) brainwave data into captivating art pieces using cutting-edge AI technology. This project leverages the power of EEG devices to capture the subtle fluctuations in brain activity and employs AI models, specifically Stable Diffusion, to translate these readings into visually stunning artworks. This intersection of science and art offers a unique perspective into the human mind, making the invisible visible and tangible.
 
-Feel free to explore and customize the code according to your needs. If you encounter any issues or have suggestions, please open an issue on this repository.
+#### Concept Overview
+- **Objective**: To create a platform where users can visualize their current mental states as art, offering a new way to understand and appreciate the complexities of human brain activity.
+- **Target Audience**: Anyone interested in neurofeedback, mental health enthusiasts, art lovers, educators, and researchers in neuroscience.
 
----
+#### Technical Components
+1. **EEG Measuring Devices**:  IDUN Guardian
+   - Utilizes non-invasive EEG technology to measure brainwaves in real-time.
+
+2. **AI-Generated Art with Stable Diffusion**:
+   - A cutting-edge AI model transforms EEG data into specific visual prompts.
+   - Each brainwave type is associated with certain visual elements and styles.
+   - The AI generates art pieces that are not only aesthetically pleasing but also scientifically representative of the user's brain activity.
+
+3. **User Interface**:
+   - A user-friendly application that integrates EEG reading and art generation.
+   - Features include real-time EEG data display, image generation, and the ability to save and share generated art.
+
+#### Use Cases
+- **Mental Health Awareness**: Visualizing brain activity can offer insights into one's mental state, potentially aiding in mindfulness and mental health awareness.
+- **Educational Tool**: A novel approach for educators to teach about neurology and the science of the brain.
+- **Artistic Exploration**: Artists and creators can use this tool to explore new frontiers of art, where science meets creativity.
+
+#### Unique Selling Points
+- **Innovative Integration**: One of the first platforms to combine EEG technology with AI-driven art generation.
+- **Customizable Experience**: Each art piece is unique, reflecting the individual's specific brain activity at that moment.
+- **Scientific and Artistic Merit**: Appeals to both the scientific community for its data representation and the art community for its creative expression.
+
+#### Future Prospects
+- **Therapeutic Applications**: Potential use in therapy and relaxation techniques, where users can see and understand the impact of different therapeutic interventions on their brain activity.
+- **Collaborations and Exhibitions**: Opportunities for collaborations with artists, galleries, and educational institutions to showcase the intersection of neuroscience and art.
+- **Enhanced User Engagement**: Development of features like trend analysis of brain activity over time and integration with virtual reality for a more immersive experience.
+
+#### Conclusion
+NeuroDraw stands at the forefront of an exciting fusion of technology, neuroscience, and art. It offers a unique and interactive way for individuals to connect with their mental state, promoting both self-awareness and appreciation for the complexities of the human mind. Through NeuroDraw, we aim to demystify brain activity and make it accessible and engaging for everyone.
